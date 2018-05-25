@@ -36,7 +36,7 @@ def getDeckLists():
             name,count = textStripper(item)
             deckTiers[deckName]["cardList"].append([name, count])
 
-    return json.dumps(deckTiers)
+    return deckTiers
 
 
 def textStripper(item):
