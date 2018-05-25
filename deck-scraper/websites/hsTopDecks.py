@@ -26,7 +26,6 @@ def getTierList():
 
 def getDeckLists():
     deckTiers = getTierList()
-
     allTestList = soup.findAll('div', attrs={'class': 'card-list'})
     blockList = soup.findAll('div', attrs={'class': 'td-box-wrap'})
 
@@ -37,19 +36,19 @@ def getDeckLists():
             name,count = textStripper(item)
             deckTiers[deckName]["cardList"].append([name, count])
 
-    return deckTiers
+    return json.dumps(deckTiers)
 
 
 def textStripper(item):
+    
     cardName = item.find('span', attrs={'class': 'card-name'}).get_text()
     cardCount = int(item.find('span', attrs={'class': 'card-count'}).get_text())
     return cardName,cardCount
 
 
-decks = getDeckLists()
+# decks = getDeckLists()
 
-
-print(json.dumps(decks, ensure_ascii=False))
+# print(json.dumps(decks, ensure_ascii=False))
 
 
 
