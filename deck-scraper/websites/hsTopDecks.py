@@ -34,7 +34,10 @@ def getDeckLists():
 
         for item in testList.ul:
             name,count = textStripper(item)
-            deckTiers[deckName]["cardList"].append([name, count])
+            deckTiers[deckName]["cardList"].append({
+                "name": name, 
+                "count": count
+            })
 
     return deckTiers
 
