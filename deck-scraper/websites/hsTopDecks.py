@@ -49,9 +49,5 @@ def textStripper(item):
     return cardName,cardCount
 
 
-# decks = getDeckLists()
-
-# print(json.dumps(decks, ensure_ascii=False))
-
 
 
