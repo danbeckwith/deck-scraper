@@ -12,6 +12,7 @@ http://www.hearthstonetopdecks.com/hearthstones-best-standard-ladder-decks/
 #### Untiered
 
 https://www.icy-veins.com/hearthstone/druid-decks
+http://metastats.net/
 
 ## Hearthstone Collection API
 
