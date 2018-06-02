@@ -47,7 +47,3 @@ def textStripper(item):
     cardName = item.find('span', attrs={'class': 'card-name'}).get_text()
     cardCount = int(item.find('span', attrs={'class': 'card-count'}).get_text())
     return cardName,cardCount
-
-
-
-
